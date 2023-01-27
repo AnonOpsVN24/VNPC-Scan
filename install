@@ -1,0 +1,77 @@
+#Install
+#color
+white="\033[1;37m"
+grey="\033[0;37m"
+purple="\033[0;35m"
+red="\033[1;31m"
+green="\033[1;32m"
+yellow="\033[1;33m"
+purple="\033[0;35m"
+cyan="\033[0;36m"
+cafe="\033[0;33m"
+#logo
+function logo() {
+    echo -e "
+$white|             ./ymMMMMMMMMMMMMMMmy/.           $blue[::] Created By :$purple PhamChien
+$white|          /hMMMMMMMMMMMMMMMMMMMMMMh/          $blue[::] Twitter :$purple @Anonymous_VNPC
+$white|         /mMMmNMMMMMNNNNNNNNMMMMMNNMMm/       $blue[::] Telegram :$purple @anonopsvn
+$white|       .hNmo:dMMNNNmNNmNNmNNmNNNMMd:omNh.     $blue[::] Github :$purple github.com/AnonLotusVNPC
+$white|      .mh:+/hMNNNNmNNmNdhmmNNmNNNNMy/o:hm.    $blue[::] Facebook :$purple PhChien Addams
+$white|     .d+://sNmMMMmMMMmdy+/mMMMmMMMmNs///+d.   $blue[::] Twitter2 :$purple @tub3rs08
+$white|     ys.o/oMmNNNmNNMNNMmdMNNMNNmNNNmMo/o.ys   $blue[::] Telegram Channel :$purple t.me/Anon0psNews
+$white|    .my.-/NmMMMMmMMNmNNyyNNmNMMmMMMMmN/:'ym.  $blue[::] PHISHING
+$white|    +h/+s/MmMMMNmNNNdym++mymNNNmNMMNmM:so/h-  $blue[::] CVE
+$white|    +N.o.sMmMMMNh/:-*-MosM-*-:/hNMMMmMs.+.N-  $blue[::] WEBDAV
+$white|    .ho/-ohmMMMM/    +M/+M.    /MMMMmho-/oh   $blue[::] BIN/IIN
+$white|     s+-s-odmNNN*     /-:/     .NNNmd+:s-+s   $blue[::] EMAIL
+$white|     .mo/-:+ymMm                mMms+:-/om.   $blue[::] PHONE
+$white|      .h/+/y'hhs                yyh*y/+/h.    $blue[::] DUMP INFO
+$white|       *hd/::-+.                .+-::/dy.     $blue[::] FTPD
+$white|         /hs+/::.--          --.::/+sh:       $blue[::] SMTP
+$white|           :hds+/-*          '-/+sdh:         $blue[::] HTTP
+$white|             ./ymM+          oMmy/            $blue[::] DOS ATTACK
+$blue[::::]$green Anonymous VNPC is a tool to check website security vulnerabilities$blue [::::]
+$blue╔════════════════════════════════════════════════════════════════════════════╗
+$blue║$green warn users , not for malicious purposes , not to attack domain names .gov$blue  ║
+$blue╚════════════════════════════════════════════════════════════════════════════╝"
+}
+function menu() {
+    echo -e "
+$green[ T ]$yellow (Termux)
+$green[ K ]$yellow (Kali-Nethunter)
+$green[ L ]$yellow (Linux)"
+}
+logo
+menu
+read -p "$(echo -e $red[$green+$red]$nc) $(echo -e $white Enter operating system :$nc) " system
+if [ $system = T ]; then
+pkg install proot
+pkg install whois
+pkg install nmap
+pkg install ncat
+pkg install nslookup
+pkg install dnsutils
+pkg install curl
+chmod +x *
+echo -e "$red ./eaglesploit.sh not found , You Are Not Rooted "
+echo -e "$green Please Command proot -0 login to use tools"
+elif [ $system = K ]; then
+suto apt install whois
+sudo apt install nmap
+sudo apt install nc
+sudo apt install nslookup
+sodu apt install curl
+chmod +x *
+echo -e "$green Intalled Find , Please Command bash vnpc to use tools"
+elif [ $system = L ]; then
+apt install whois
+apt install nmap
+apt install ncat
+apt install nslookup
+apt install dnsutils
+apt install curl
+chmod +x *
+echo -e "$green Intalled Find , Please Command ./eaglesploit.sh to use tools"
+else
+echo -e "$red 404 Not Found"
+fi
